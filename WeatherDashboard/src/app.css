@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.bg-day-clear {
+  background-image: linear-gradient(to bottom, #87CEEB, #E0F6FF);
+}
+
+.bg-day-cloudy {
+  background-image: linear-gradient(to bottom, #B0C4DE, #D3DCE6);
+}
+
+.bg-rainy {
+  background-image: linear-gradient(to bottom, #4682B4, #708090);
+}
+
+.bg-night-clear {
+  background-image: linear-gradient(to bottom, #2C3E50, #4B5EAA);
+}
