@@ -174,12 +174,7 @@
             {:else if hourlyData}
               <div class="mt-6">
                 <h3 class="text-xl font-semibold mb-4">Today's {showRain ? 'Rainfall' : 'Temperature'} Trend</h3>
-                <button 
-                  class="mb-2 bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600 transition"
-                  onclick={() => (showRain = !showRain)}
-                >
-                  Switch to {showRain ? 'Temperature' : 'Rain'}
-                </button>
+                
                 {#if hourlyData.temps && hourlyData.temps.length > 0}
                   <TemperatureGraph 
                     data={{ ...hourlyData }} 
